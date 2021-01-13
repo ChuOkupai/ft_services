@@ -1,0 +1,65 @@
+apiVersion: 1
+datasources:
+  - name: FTPS
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    user: root
+    database: ftps
+    secureJsonData:
+      password: root 
+    editable: false
+  - name: Grafana
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    user: root
+    database: grafana
+    secureJsonData:
+      password: root 
+    editable: false
+  - name: InfluxDB
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    user: root
+    database: influxdb
+    secureJsonData:
+      password: root 
+    editable: false
+  - name: MySQL
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    user: root
+    database: mysql
+    secureJsonData:
+      password: root 
+    editable: false
+  - name: Nginx
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    user: root
+    database: nginx
+    secureJsonData:
+      password: root 
+    editable: false
+  - name: phpMyAdmin
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    user: root
+    database: phpmyadmin
+    secureJsonData:
+      password: root 
+    editable: false
+  - name: WordPress
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    user: root
+    database: wordpress
+    secureJsonData:
+      password: root 
+    editable: false

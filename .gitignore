@@ -1,0 +1,8 @@
+# Backup files
+*.bak
+
+# Log files
+*.log
+
+# Logins file
+logins.txt
