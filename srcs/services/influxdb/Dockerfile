@@ -9,8 +9,7 @@ RUN chmod 755 /usr/local/bin/start.sh
 RUN apk add --no-cache influxdb
 
 # INFLUXDB SETUP
-RUN rm -f /etc/influxdb.conf
-COPY config/influxdb.conf /etc/influxdb
+COPY config/influxdb.conf /etc
 
 # EXEC
 EXPOSE 8086

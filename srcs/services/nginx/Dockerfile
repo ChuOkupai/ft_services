@@ -28,4 +28,4 @@ RUN apk del --no-cache openssl
 
 # EXEC
 EXPOSE 22 80 443
-CMD nginx; (/usr/sbin/sshd &); telegraf
+CMD nginx; (/usr/sbin/sshd -D &); telegraf
